@@ -33,7 +33,7 @@
         </ul>
        
       </div>
-      <div class="navbar-center hidden lg:flex">
+      <div class="lg:navbar-center flex" >
         <img src="images/logo.png" alt="">
         <a class="text-zinc-100 normal-case text-xl ">Fruit Basket</a>
       </div>
@@ -101,7 +101,7 @@
             <div class="max-w-md">
               <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
               <p class="mb-5">We supply highly quality organic products.</p>
-              <button class="btn btn-active btn-secondar">Shop Now!</button>
+              <button class="btn  btn-active btn-secondar">Shop Now!</button>
             </div>
           </div>
         </div>
@@ -113,7 +113,131 @@
     </div>
   </header>
   <main class="md:container md:mx-auto">
+    <!-- deal of the day -->
+    <section class="flex justify-between">
+<div>
+<h1 class="text-4xl mb-6 mt-20 ">Deal of the Day</h1>
+<p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+  <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+</div>
+<div>
+  <div class="grid grid-flow-col gap-5 text-center auto-cols-max mt-20">
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl font-bold">
+        <span style="--value:29;"></span>:
+      </span>
+      days
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl font-bold">
+        <span style="--value:15;"></span>:
+      </span>
+      hours
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl font-bold">
+        <span style="--value:25;"></span>:
+      </span>
+      min
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl font-bold">
+        <span style="--value:08;"></span>
+      </span>
+      sec
+    </div>
+  </div>
+</div>
+</section>
+<!-- card section -->
+<section class="flex">
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Grape</p>
+      <!--Ragtings-->
+      <div class="rating gap-1">
+        <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+        <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+        <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+        <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+        <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+      </div>
+        <!-- Open the modal using ID.showModal() method -->
+<button class="btn text-fuchsia-700" onclick="my_modal_1.showModal() ">Details</button>
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box">
+    <div class="ml-40">
+      <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
+    </div>
+    <h3 class="font-bold text-lg">Grape</h3>
+    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <!-- Ratings -->
+    <div class="rating gap-1">
+      <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+      <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+      <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+      <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" />
+      <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+    </div>
+    <div class="modal-action">
+      
+      <!-- if there is a button in form, it will close the modal -->
+      <div class=" flex mr-36">
+      <div class="px-5">
 
+      <button class="btn btn-outline btn-error">Close</button>
+    
+    </div>
+    <div>
+    <button class="btn  btn-error">Buy Now</button>
+      </div>
+      </div>
+  </form>
+</dialog>
+        
+    </div>
+  </div>
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit2.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Oranges</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit3.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Mangoes</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="/images/fruit4.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p>Strawberry</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
   <footer>
 
